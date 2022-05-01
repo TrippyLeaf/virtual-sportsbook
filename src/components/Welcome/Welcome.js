@@ -7,49 +7,31 @@ export default function Welcome() {
       <div className='instructions'>
         <header>Description</header>
         <p>
-          This app was built to give sports enthusiasts the opportunity 
-          to place bets on their favorite sports. The reponsive design supports 
-          any screen size from PC or Laptop to Tablets and Mobile Phones.
+          Deposit Crypto like BTC, ETH, SOL or USDC, make your picks, win. 
+          Fast payouts and fair odds.
+          Create your Betcoinz account today
         </p>
-        <header>Match Generation</header>
+        <header>Matches</header>
         <p>
-          All matches are randomly generated. Matches are created every 15min, 
-          starting 24 hours after creation. All matches will be resulted 1min after 
-          they have started and all bets placed on those matches are settled 1min after 
+          All matches will be closed 5 min before 
+          they have started and all bets placed on those matches are settled 10 mins after 
           the results have been finalized.
         </p>
-        <header>User Accounts</header>
+        <header>Create your Account!</header>
         <p>
-          Users will need to register an account in order to place bets. Each new account
-            will be loaded with $1000 in virtual currency. Once you have created an account, 
-            you will be automatically logged in ready to place your first bet!
-        </p>
-        <header>Placing Bets</header>
-        <p>
-          In order to place a bet you will need to find a match to bet on. There are two 
-          ways to do this; either by navigating through the "Match List" on the left hand 
-          side of the screen or you could click on "Upcoming Matches" on the top left to easily 
-          navigate to matches which are starting soon.
-        </p>
-        <p>
-          Once you have found your match, it will load into the console in the center of the 
-          page. Click on the price/odd below the team you want to bet on. The bet will then load 
-          into the "Betslip" on the right.
-        </p>
-        <p>
-          The "Betslip" is where you will place your bet. Enter the amount that you would like 
-          to bet on your team (not more than your balance, of course!). When you are happy with 
-          the amount you have entered and the team you have selected, click "Place Bet" at the 
-          bottom of the betslip to place your bet! 
-        </p>
+          Users need to register an account in order to place bets. Each new account
+            is eligible for a Deposit Bonus of up to $250. Once you have created an account, 
+            you can log in and place your bets!
+        </p
+    
         <p>
           To check the results of your bets, simply click on "Bet History", at the top of the 
-          page to the right of your username. There you will find a list of all your previous bets.
+          page to the right of your username. There you will find a list of all your previous bet results.
         </p>
-        <header>Reset Balance</header>
+        <header>Reload Balance</header>
         <p>
-          Blown up your bankroll? Don't stress, just click the "Reset Balance" button that will 
-          appear where your balance used to be. Your account will be reloaded with another $1000.
+          Blown up your bankroll? Just click the "Deposit" button that will 
+          appear where your balance used to be. Deposit Crypto and your account will be reloaded.
         </p>
         <p>Good Luck!</p>
       </div>
