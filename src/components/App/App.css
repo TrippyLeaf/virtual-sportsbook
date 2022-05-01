@@ -14,7 +14,7 @@ main {
 .logo_box {
   display: flex;
   max-height: 40px;
-  color: rgb(35, 111, 161);
+  color: rgb(38, 128, 71);
   font-weight: bold;
 }
 
@@ -36,8 +36,8 @@ main {
 @media only screen and (min-width: 550px) {
 
   .betslip_count {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
   }
 
   .console {
