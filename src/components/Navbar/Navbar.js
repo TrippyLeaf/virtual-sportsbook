@@ -24,7 +24,7 @@ export default function Navbar(props) {
                         <FontAwesomeIcon icon={faSync} size='xs' />
                       </button>
                     </div>
-                  : <button className='reload_button' onClick={() => props.reloadBalance()}>Reload Balance</button>}
+                  : <button className='reload_button' onClick={() => props.reloadBalance()}>Deposit</button>}
                 </div>
               </div>
               <div className='stacked_group'>
