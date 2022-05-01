@@ -22,7 +22,7 @@ export default function Welcome() {
           Users need to register an account in order to place bets. Each new account
             is eligible for a Deposit Bonus of up to $250. Once you have created an account, 
             you can log in and place your bets!
-        </p
+        </p>
     
         <p>
           To check the results of your bets, simply click on "Bet History", at the top of the 
