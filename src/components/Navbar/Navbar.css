@@ -25,13 +25,13 @@ nav {
   text-transform: uppercase;
   background: none;
   border: none;
-  color: white;
+  color: black;
 }
 
 .menu_item.user_controls {
   display: flex;
   flex-direction: row;
-  color: white;
+  color: black;
 }
 
 .stacked_group {
@@ -42,10 +42,10 @@ nav {
 }
 
 .history_link, .logout_button, .reload_button {
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   text-transform: uppercase;
   padding: 8px;
   border: none;
