@@ -1,12 +1,12 @@
 .match_list_sidebar, .betslip{
   display:none;
-  background-color: rgb(231, 229, 229);
+  background-color: black;
   min-width: 190px;
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .match_list_sidebar {
-  text-align: left;
+  text-align: center;
   overflow-x: hidden;
   max-height: calc(100vh - 125px);
 }
@@ -17,7 +17,7 @@
 }
 
 .match_list_sidebar.mobile_active {
-  width: 75%;
+  width: 80%;
   border: 5px black solid;
 }
 
@@ -27,7 +27,7 @@
 
 .matchlist_burger {
   position: fixed;
-  left: 2px;
+  left: 4px;
   top: 65px;
   cursor: pointer;
 }
