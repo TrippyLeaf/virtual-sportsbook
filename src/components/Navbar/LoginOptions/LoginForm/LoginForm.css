@@ -15,7 +15,7 @@
 }
 
 .password, .user_name {
-  width: 250px;
+  width: 300px;
   text-align: left;
 }
 
@@ -23,11 +23,11 @@ label {
   display: inline-block;
   width: 80px;
   text-align: left;
-  font-size: 12px;
-}​
+  font-size: 16px;
+}
 
 #LoginForm__user_name {
-  width: 150px;
+  width: 200px;
 }
 
 @media only screen and (min-width: 550px) {
