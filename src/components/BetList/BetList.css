@@ -38,7 +38,7 @@ th {
 }
 
 .history > .bet_history_list > .bet_line > td{
-  padding: 2px 3px;
+  padding: 4px 5px;
 }
 
 tr:nth-child(even) {
