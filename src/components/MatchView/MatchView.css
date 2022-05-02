@@ -71,13 +71,13 @@
 }
 
 .odd:hover {
-  background-color: rgb(35, 111, 161);
+  background-color: black;
   color: white;
 }
 
 .odd.disabled:hover {
-  background-color: rgb(172, 172, 172);
-  color: #545151;
+  background-color: black;
+  color: white;
 }
 
 .match_start_error {
