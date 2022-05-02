@@ -1,16 +1,16 @@
 .match {
-  font-size: 14px;
+  font-size: 18px;
   padding-top: 5px;
   padding-right: 6px;
 }
 
 .match > a {
-  color: #545151;
+  color: black;
   text-decoration: none;
   display:inline-block;
   width:100%;
 }
 
 .match > a:hover {
-  color: #236FA1;
+  color: white;
 }
