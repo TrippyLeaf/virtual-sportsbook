@@ -31,8 +31,8 @@ export default class RegistrationForm extends Component {
   handleSubmit = ev => {
     ev.preventDefault()
     TokenService.clearAuthToken();
-    const { full_name, user_name, password } = ev.target
-    const newUser = { full_name: full_name.value, user_name: user_name.value, password: password.value }
+    const { user_name, email, password } = ev.target
+    const newUser = { user_name: user_name.value, email: email.value, password: password.value }
 
     this.setState({ error: null })
 
@@ -43,12 +43,12 @@ export default class RegistrationForm extends Component {
       AuthApiService.postUser(newUser)
       .then(res => {
         return AuthApiService.postLogin({
-          user_name: newUser.user_name, 
+          email: newUser.email, 
           password: newUser.password
         })
         .then(result => {
-          const { user_name } = TokenService.readJwtToken()
-          this.props.onRegistrationSuccess(user_name, result.user_balance);
+          const { email } = TokenService.readJwtToken()
+          this.props.onRegistrationSuccess(email, result.user_balance);
         })
       })
       .catch(err => {
@@ -70,25 +70,25 @@ export default class RegistrationForm extends Component {
           {error && <p className='red'>{error}</p>}
         </div>
         <div className='field'>
-          <label htmlFor='RegistrationForm__full_name'>
-            Full name
+          <label htmlFor='RegistrationForm__user_name'>
+            User name
           </label>
           <input 
-            name='full_name'
-            type='text'
-            required
-            id='RegistrationForm__full_name'>
-          </input>
-        </div>
-        <div className='field'>
-          <label htmlFor='RegistrationForm__user_name'>
-            User name 
-          </label>
-          <input
             name='user_name'
             type='text'
             required
             id='RegistrationForm__user_name'>
+          </input>
+        </div>
+        <div className='field'>
+          <label htmlFor='RegistrationForm__email'>
+            Email 
+          </label>
+          <input
+            name='email'
+            type='text'
+            required
+            id='RegistrationForm__email'>
           </input>
         </div>
         <div className='feild'>
