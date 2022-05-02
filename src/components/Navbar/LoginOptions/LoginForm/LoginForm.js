@@ -16,9 +16,9 @@ export default class LoginForm extends React.Component {
     TokenService.clearAuthToken();
     this.setState({ error: null })
 
-    const { user_name, password } = ev.target
+    const { email, password } = ev.target
     AuthApiService.postLogin({
-      user_name: user_name.value,
+      email: email.value,
       password: password.value,
     })
     .then(res => {
@@ -44,13 +44,13 @@ export default class LoginForm extends React.Component {
           {error && <p className='red'>{error}</p>}
         </div>
         <div className='field'>
-          <label htmlFor='LoginForm__user_name'>
-            User name
+          <label htmlFor='LoginForm__email'>
+            Email
           </label>
           <input
             required
-            name='user_name'
-            id='LoginForm__user_name'>
+            name='email'
+            id='LoginForm__email'>
           </input>
         </div>
         <div className='field'>
