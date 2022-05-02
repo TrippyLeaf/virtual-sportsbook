@@ -7,9 +7,9 @@ export default function Welcome() {
       <div className='instructions'>
         <header>Description</header>
         <p>
-          Deposit Crypto like BTC, ETH, SOL or USDC, make your picks, win. 
+          Deposit Crypto such as Bitcoin, Ethereum, Solana or USDC!. 
           Fast payouts and fair odds.
-          Create your Betcoinz account today
+          Create your Betcoinz account today!
         </p>
         <header>Matches</header>
         <p>
@@ -19,9 +19,9 @@ export default function Welcome() {
         </p>
         <header>Create your Account!</header>
         <p>
-          Users need to register an account in order to place bets. Each new account
-            is eligible for a Deposit Bonus of up to $250. Once you have created an account, 
-            you can log in and place your bets!
+            Users need to register an account in order to place bets. Each new account
+            is eligible for a Deposit Bonus of UP to $250. Once you have created an account, 
+            you can log in and start placing your bets!
         </p>
     
         <p>
@@ -31,9 +31,9 @@ export default function Welcome() {
         <header>Reload Balance</header>
         <p>
           Blown up your bankroll? Just click the "Deposit" button that will 
-          appear where your balance used to be. Deposit Crypto and your account will be reloaded.
+          appear where your balance used to be. Deposit more Crypto and your account will be reloaded in no time.
         </p>
-        <p>Good Luck!</p>
+        <p>Good Luck and thanks for checking Betcoinz out!</p>
       </div>
     </section>
   );
