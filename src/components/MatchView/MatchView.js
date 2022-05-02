@@ -36,17 +36,11 @@ export default function MatchView() {
         })
     },[matchId]);
     // store image urls for header images of each sport
-    const imageStore = [
-      { id: 'Soccer', src: Soccer},
-      { id: 'Tennis', src: Tennis},
+    const imageStore = [     
       { id: 'American Football', src: Football},
       { id: 'Basketball', src: Basketball},
       { id: 'Baseball', src: Baseball},
-      { id: 'Cricket', src: Cricket},
-      { id: 'Ice Hockey', src: IceHockey},
-      { id: 'Rugby Union', src: Rugby},
-      { id: 'Rugby League', src: Rugby},
-      { id: 'Boxing/MMA', src: Rugby},
+      
     ];
     // Check if match has started, to disable odds buttons
     let buttonDisabled = 'disabled' 
