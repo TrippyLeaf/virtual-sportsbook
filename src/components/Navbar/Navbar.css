@@ -12,12 +12,12 @@ nav {
 }
 
 .user_info {
-  color: white;
+  color: black;
   margin: auto; 
 }
 
 .user_info > a {
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
@@ -71,7 +71,7 @@ nav {
   }
 
   .betslip_count {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .menu_item {
