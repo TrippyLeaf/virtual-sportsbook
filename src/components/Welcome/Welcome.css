@@ -15,7 +15,7 @@ form {
 
 .instructions {
   padding: 2px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .instructions > p {
@@ -28,8 +28,8 @@ form {
 }
 
 .login_options > .user_login_control {
-  width: 120px;
-  height: 40px;
+  width: 130px;
+  height: 60px;
   background-color: black;
   color: white;
   margin: 2px;
@@ -47,11 +47,11 @@ form {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 26px;
     }
   
     body {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 1.5;
     }
   
