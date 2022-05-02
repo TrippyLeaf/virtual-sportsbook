@@ -5,11 +5,11 @@
 .uc-match {
   display: flex;
   justify-content: center;
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
 .uc_match_left, .uc_start {
-  background-color: rgb(66, 64, 64);
+  background-color: black;
   padding: 4px 0 4px 15px;
 }
 
@@ -21,13 +21,13 @@
 .uc_sport {
   text-align: left;
   min-width: 110px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;  
 }
 
 .uc_league {
   text-align: left;
-  font-size: 10px;
+  font-size: 16x;
 }
 .uc_desc {
   padding-left: 5px;
@@ -38,7 +38,7 @@
   font-size: 12px;
   overflow: hidden;
   white-space: nowrap;
-  background-color: rgb(35, 111, 161);
+  background-color: black;
 }
 .uc_start {
   font-size: 12px;
