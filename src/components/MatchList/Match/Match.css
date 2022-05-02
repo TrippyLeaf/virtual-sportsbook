@@ -5,12 +5,12 @@
 }
 
 .match > a {
-  color: gray;
+  color: white;
   text-decoration: none;
   display:inline-block;
   width:100%;
 }
 
 .match > a:hover {
-  color: white;
+  color: black;
 }
