@@ -5,7 +5,7 @@
 }
 
 .match > a {
-  color: black;
+  color: gray;
   text-decoration: none;
   display:inline-block;
   width:100%;
