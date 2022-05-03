@@ -41,18 +41,18 @@ class App extends React.Component {
   // Refresh Button 
   // In case a users bet was settled and they are waiting for funds to be credited
   refreshBalance = () => {
-    const{ user_name, user_id } = TokenService.readJwtToken();
+    const{ email, user_id } = TokenService.readJwtToken();
     return BalanceApiService.getUserBalance(user_id)
       .then(balance => {
         this.setState({
           balance: balance.user_balance,
-          user: user_name,
+          user: email,
           loggedIn: true,
           user_id: user_id,
         })
       })
   };
-  // When user selects to have their balance reloaded after it hits $0
+  // When user makes deposit
   reloadBalance = () => {
     const{ user_id } = TokenService.readJwtToken();
     return BalanceApiService.reloadUserBalance(user_id)
@@ -191,7 +191,7 @@ class App extends React.Component {
       bets: this.state.bets,
       upcomingMatches: this.state.upcomingMatches, 
       betHistory: this.state.betHistory,
-      user_name: this.state.user,
+      email: this.state.user,
       user_id: this.state.user_id,
     }
 
