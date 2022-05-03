@@ -14,8 +14,8 @@
   max-width: 280px;
 }
 
-.password, .user_name {
-  width: 400px;
+.password, .email {
+  width: 200px;
   text-align: left;
 }
 
@@ -26,7 +26,7 @@ label {
   font-size: 18px;
 }
 
-#LoginForm__user_name {
+#LoginForm__email {
   width: 300px;
 }
 
