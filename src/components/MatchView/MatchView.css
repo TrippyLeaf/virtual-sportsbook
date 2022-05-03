@@ -45,8 +45,8 @@
 .market {
   padding: 14px;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   text-transform: uppercase;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .odd {
-  background-color: black;
+  background-color: white;
   width: 100%;
   height: 40px;
   line-height: 40px;
