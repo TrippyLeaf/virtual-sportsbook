@@ -31,8 +31,8 @@ export default class RegistrationForm extends Component {
   handleSubmit = ev => {
     ev.preventDefault()
     TokenService.clearAuthToken();
-    const { user_name, email, password } = ev.target
-    const newUser = { user_name: user_name.value, email: email.value, password: password.value }
+    const { email, password } = ev.target
+    const newUser = { email: email.value, password: password.value }
 
     this.setState({ error: null })
 
@@ -70,23 +70,12 @@ export default class RegistrationForm extends Component {
           {error && <p className='red'>{error}</p>}
         </div>
         <div className='field'>
-          <label htmlFor='RegistrationForm__user_name'>
-            User name
-          </label>
-          <input 
-            name='user_name'
-            type='text'
-            required
-            id='RegistrationForm__user_name'>
-          </input>
-        </div>
-        <div className='field'>
           <label htmlFor='RegistrationForm__email'>
             Email 
           </label>
           <input
             name='email'
-            type='email'
+            type='text'
             required
             id='RegistrationForm__email'>
           </input>
