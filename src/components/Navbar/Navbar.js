@@ -17,10 +17,17 @@ export default function Navbar(props) {
                 <div className='balance'>
                   {props.balance > 0 // Display reload option if balance is zero
                   ? <div>
-                  {`$${props.balance.toFixed(2)}`}
-                 <button onClick="window.open('https://ftx.us/pay/request?subscribe=false&coin=USD&id=2065&memoIsRequired=true&memo=&notes=','_blank','resizable,width=700,height=900')">Pay with FTX US</button>
+                      {`$${props.balance.toFixed(2)}`}
+                      <button
+                        className='refresh_button'
+                        onClick={() => props.refreshBalance()}>
+                        <FontAwesomeIcon icon={faSync} size='xs' />
+                      </button>
+                    </div>
+                  : <button className='reload_button' onClick={() => props.reloadBalance()}>Reload Balance</button>}
                 </div>
-                <div className='stacked_group'>
+              </div>
+              <div className='stacked_group'>
                 <Link className='history_link' to='/history'>Bet History</Link>
                 <button className='logout_button' onClick={() => props.handleUserlogout()}>Logout</button>
               </div>
