@@ -41,7 +41,7 @@ nav {
   margin: 0px 10px;
 }
 
-.history_link, .logout_button, .reload_button {
+.history_link, .logout_button, .deposit_button {
   font-size: 20px;
   text-decoration: none;
   background-color: white;
@@ -57,7 +57,7 @@ nav {
   padding: 0px;
 }
 
-.refresh_button {
+.deposit_button {
   background: none;
   border: none;
   color: white;
