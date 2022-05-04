@@ -1,18 +1,18 @@
 .login_button {
   height: 35px;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 16px;
   padding: 8px 12px;
   color: white;
   font-weight: bold;
   cursor: pointer;
   float: right;
-  background-color: black;
+  background-color: rgb(66, 64, 64);
 }
 
 .login_option {
   height: 35px;
-  font-size: 16px;
+  font-size: 14px;
   padding: 8px 12px;
   color: white;
   font-weight: bold;
@@ -32,10 +32,10 @@
 }
 
 .login_option:hover {
-  color: black;
+  color: rgb(184, 178, 178);
 }
 .required {
-  color: black;
+  color: #57d17e;
   font-family: Arial;
   font-weight: bold;
 }
