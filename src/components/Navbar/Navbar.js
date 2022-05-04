@@ -19,12 +19,12 @@ export default function Navbar(props) {
                   ? <div>
                       {`$${props.balance.toFixed(2)}`}
                       <button
-                        className='refresh_button'
+                        className='deposit_button'
                         onClick={() => props.refreshBalance()}>
                         <FontAwesomeIcon icon={faSync} size='xs' />
                       </button>
                     </div>
-                  : <button className='reload_button' onClick={() => props.reloadBalance()}>Deposit</button>}
+                  : <button className='deposit_button' onClick={() => props.reloadBalance()}>Deposit</button>}
                 </div>
               </div>
               <div className='stacked_group'>
