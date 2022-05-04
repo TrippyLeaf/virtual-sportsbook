@@ -21,7 +21,7 @@ export default function Navbar(props) {
                       <button
                         className='deposit_button'
                         onClick={() => props.refreshBalance()}>
-                        <FontAwesomeIcon icon={faSync} size='xs' />
+                        <FontAwesomeIcon icon={faWallet} size='lg' />
                       </button>
                     </div>
                   : <button className='deposit_button' onClick={() => props.reloadBalance()}>Deposit</button>}
