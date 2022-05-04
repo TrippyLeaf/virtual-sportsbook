@@ -199,10 +199,10 @@ class App extends React.Component {
     <SportsbookContext.Provider value={contextValue}>
         <header role='banner'>
           <div className='logo_box'>
+            <div className='header_letter_box'>M</div>
+            <div className='header_word_box irtual'>ake</div>
             <div className='header_letter_box'>B</div>
-            <div className='header_word_box irtual'>et</div>
-            <div className='header_letter_box'>C</div>
-            <div className='header_word_box ports'>oinz</div>
+            <div className='header_word_box ports'>etz</div>
           </div>
         </header>
         <div className='App'>
