@@ -3,13 +3,13 @@ import TokenService from './token-service';
 
 const AuthApiService = {
   // Check if user already exists (Registration)
-  postUser(email, password) {
+  postUser(user_name, email, password) {
     return fetch(`${config.API_ENDPOINT}/users`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
       },
-      body: JSON.stringify(email, password),
+      body: JSON.stringify(user_name, email, password),
     })
     .then(res =>
       (!res.ok) 
