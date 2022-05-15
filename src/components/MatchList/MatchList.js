@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import Sport from './Sport/Sport';
+import League from './Leagues/Leagues';
 import { Link } from 'react-router-dom';
 import './MatchList.css';
 import MatchesApiService from '../../services/matches-api-service';
