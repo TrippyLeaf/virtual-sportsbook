@@ -25,7 +25,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: black; 
+  background-color: white; 
   z-index:2; 
 }
 
@@ -71,8 +71,8 @@
 }
 
 .odd:hover {
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 .odd.disabled:hover {

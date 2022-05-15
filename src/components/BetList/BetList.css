@@ -14,8 +14,8 @@
 th {
   text-align: center;
   text-transform: uppercase;
-  background-color: gray;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: black;
   font-weight: normal;
   font-size: 18px;
 }
@@ -46,8 +46,8 @@ tr:nth-child(even) {
 }
 
 .bet_history > header {
-  color: white;
-  background-color: gray;
+  color: black;
+  background-color: white;
 } 
 
 @media only screen and (min-width: 850px) {
