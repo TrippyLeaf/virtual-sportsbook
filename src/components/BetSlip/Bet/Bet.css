@@ -7,16 +7,16 @@
   padding: 5px 5px 0px 2px;
   font-size: 14px;
   border: none;
-  background-color: red;
+  background-color: rgb(172, 172, 172);
 }
 
 .remove_bet:hover {
-  background-color: red;
+  background-color: rgb(131, 35, 35);
   color: white;
 }
 
 .bet_team {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -35,17 +35,17 @@
 
 .bet_amount {
   position: relative;
-  top: 4px;
-  width: 70px;
-  height: 40px;
-  font-size: 18px;
+  top: 2px;
+  width: 50px;
+  height: 20px;
+  font-size: 14px;
   text-align: right;
   border: 2px grey solid;
 }
 
 
 .bet_size {
-  font-size: 20px
+  font-size: 16px
 }
 
 .bet_price {
@@ -57,7 +57,7 @@
 }
 
 .bet_desc, .bet_market, .bet_league {
-  font-size: 20px;
+  font-size: 10px;
 }
 
 
@@ -73,4 +73,3 @@
   }
  
 }
-

@@ -2,15 +2,15 @@
   list-style: none;
   padding-left: 12px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .league_name {
-  text-align: center;
+  text-align: left;
   padding: 2px 0 2px 12px;
-  color: rgb(0, 0, 0);
-  border: 1px rgb(143, 143, 143) solid;
-  background-color: #ffffff;
+  color: white;
+  border: 1px rgb(66, 64, 64) solid;
+  background-color: #57e17d;
   cursor: pointer;
   width: 100%;
 }

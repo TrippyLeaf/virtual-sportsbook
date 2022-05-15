@@ -1,12 +1,12 @@
 .betslip {
-  color: rgb(129, 129, 129);
+  color: darkslategray;
   min-width: 250px;
   max-height: calc(100vh - 100px);
   overflow-y: auto;
 }
 
 .betslip > header {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(66, 64, 64);
   padding: 5px;
   color: white;
 }
@@ -43,7 +43,7 @@
 }
 
 .return {
-    font-size: 16px
+    font-size: 12px
 }
 
 .betslip_burger {

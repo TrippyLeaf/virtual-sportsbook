@@ -1,6 +1,6 @@
 .history {
   margin: auto;
-  margin-top: 18px;
+  margin-top: 15px;
 }
 
 .bet_history {
@@ -8,16 +8,16 @@
 }
 
 .bet_line {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 th {
   text-align: center;
   text-transform: uppercase;
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color: rgb(66, 64, 64);
+  color: white;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .bl_desc, .bl_team, .bl_stake,.bl_return, .bl_status {
@@ -29,7 +29,7 @@ th {
 }
 
 .history > thead {
-  font-size: 18px;
+  font-size: 14px;
   margin: 0 auto
 }
 
@@ -38,7 +38,7 @@ th {
 }
 
 .history > .bet_history_list > .bet_line > td{
-  padding: 4px 5px;
+  padding: 2px 3px;
 }
 
 tr:nth-child(even) {
@@ -46,19 +46,18 @@ tr:nth-child(even) {
 }
 
 .bet_history > header {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: rgb(66, 64, 64);
 } 
 
 @media only screen and (min-width: 850px) {
 
   .bet_line {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .history > thead {
-    font-size: 20px;
+    font-size: 18px;
   }
   
 }
-
