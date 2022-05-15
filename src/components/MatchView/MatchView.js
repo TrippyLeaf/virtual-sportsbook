@@ -7,11 +7,11 @@ import SportsbookContext from '../../context/SportsbookContext';
 import MatchesApiService from '../../services/matches-api-service';
 import Baseball from '../../assets/images/baseball.JPG';
 import Basketball from '../../assets/images/basketball.JPG';
-import Nascar from '../../assets/images/nascar.JPG';
-import Football from '../../assets/images/football.JPG';
-import Ufc from '../../assets/images/ufc.JPG';
-import Boxing from '../../assets/images/boxing.JPG';
 import Golf from '../../assets/images/golf.JPG';
+import Football from '../../assets/images/football.JPG';
+import UFC from '../../assets/images/ufc.JPG';
+import Boxing from '../../assets/images/boxing.JPG';
+import Racing from '../../assets/images/racing.JPG';
 import './MatchView.css';
 
 export default function MatchView() {
@@ -20,31 +20,29 @@ export default function MatchView() {
   let { matchId } = useParams();
   const [error, setError] = useState(null);
   const [match, setMatch] = useState({});
-  const [league_name, setLeagueName]  = useState(null);
+  const [sport_name, setSportName]  = useState(null);
   // useEffect substituted for depreciated onComponentWillReceiveProps()
   useEffect(
     () => {
       MatchesApiService.getMatchById(matchId)
       .then(res => {
         setMatch(res)
-        setLeagueName(res.league_name)
+        setSportName(res.sport_name)
         })
       .catch(error => {
         setError({error})
         history.push('/upcoming')
         })
     },[matchId]);
-    // store image urls for header images of each league
-    const imageStore = [     
-      { id: 'NFL', src: Football},
-      { id: 'NBA', src: Basketball},
-      { id: 'NCAAF', src: Football},
-      { id: 'NCAAB', src: Basketball},
-      { id: 'MLB', src: Baseball},
-      { id: 'Nascar', src: Nascar},
+    // store image urls for header images of each sport
+    const imageStore = [
+      { id: 'American Football', src: Football},
+      { id: 'Basketball', src: Basketball},
+      { id: 'Baseball', src: Baseball},
       { id: 'Golf', src: Golf},
       { id: 'UFC', src: Ufc},
-      { id: 'Boxing', src: Boxing},      
+      { id: 'Boxing', src: Boxing},
+      { id: 'Racing', src: Racing},
     ];
     // Check if match has started, to disable odds buttons
     let buttonDisabled = 'disabled' 
@@ -53,19 +51,19 @@ export default function MatchView() {
     }
     return (
       <>
-      {error === null && match && league_name?
+      {error === null && match && sport_name?
       <div className='match_view'>
         <div 
           className='match_view_header' 
-          style={{ backgroundImage: `url(${imageStore[imageStore.findIndex(x => x.id === leaguet_name)].src})` }}>
+          style={{ backgroundImage: `url(${imageStore[imageStore.findIndex(x => x.id === sport_name)].src})` }}>
           <div className='match_view_header_overlay'>
-            <div className='match_header'>{match.league_name}</div>
+            <div className='match_header'>{match.sport_name} - {match.league_name}</div>
             <div className='opponents'>{`${match.home_team_name} v ${match.away_team_name}`}</div>
             <div className='start_time'>Starts: {Moment(match.match_start).format('lll')}</div> 
           </div>
         </div>
         {!checkMatchNotStarted(match)? <div className='match_start_error'><p>MATCH HAS ALREADY STARTED.</p><p>YOU WILL NOT BE ABLE TO PLACE BETS ON IT</p></div>:null}
-        <div className='market'>Match</div> 
+        <div className='market'>To win match</div> 
         <div className='outcomes'>         
           <div className='outcome'>
             <div className='team'>{match.home_team_name}</div>
@@ -74,6 +72,7 @@ export default function MatchView() {
               disabled={buttonDisabled}
               onClick={checkMatchNotStarted(match)
                 ? () => context.createBet(
+                  match.sport_name, 
                   match.league_name, 
                   match.home_team_name, 
                   match.home_team_price, 
@@ -91,6 +90,7 @@ export default function MatchView() {
               disabled={buttonDisabled}
               onClick={checkMatchNotStarted(match)
                 ? () => context.createBet(
+                  match.sport_name, 
                   match.league_name, 
                   match.away_team_name, 
                   match.away_team_price, 
