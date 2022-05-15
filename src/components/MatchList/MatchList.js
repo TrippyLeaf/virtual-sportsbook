@@ -47,9 +47,9 @@ export default function MatchList({history}) {
         .map(league => 
           <league 
             closeMenu={closeMenu}
-            key={league}
-            league={league} 
-            leagues={matches[match].leagues}
+            key={leagues}
+            league={league_id} 
+            leagues={matches[match_id].leagues}
           />)
       } else leagues = 'No upcoming matches to display, check back later for updated match list'
      
