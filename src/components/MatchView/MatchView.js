@@ -11,6 +11,7 @@ import Nascar from '../../assets/images/nascar.JPG';
 import Football from '../../assets/images/football.JPG';
 import Ufc from '../../assets/images/ufc.JPG';
 import Boxing from '../../assets/images/boxing.JPG';
+import Golf from '../../assets/images/golf.JPG';
 import './MatchView.css';
 
 export default function MatchView() {
@@ -58,13 +59,13 @@ export default function MatchView() {
           className='match_view_header' 
           style={{ backgroundImage: `url(${imageStore[imageStore.findIndex(x => x.id === sport_name)].src})` }}>
           <div className='match_view_header_overlay'>
-            <div className='match_header'>{match.sport_name} - {match.league_name}</div>
+            <div className='match_header'>{match.league_name}</div>
             <div className='opponents'>{`${match.home_team_name} v ${match.away_team_name}`}</div>
             <div className='start_time'>Starts: {Moment(match.match_start).format('lll')}</div> 
           </div>
         </div>
         {!checkMatchNotStarted(match)? <div className='match_start_error'><p>MATCH HAS ALREADY STARTED.</p><p>YOU WILL NOT BE ABLE TO PLACE BETS ON IT</p></div>:null}
-        <div className='market'>To win match</div> 
+        <div className='market'>Match</div> 
         <div className='outcomes'>         
           <div className='outcome'>
             <div className='team'>{match.home_team_name}</div>
