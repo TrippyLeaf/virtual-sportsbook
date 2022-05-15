@@ -41,9 +41,9 @@ export default function MatchView() {
       { id: 'NCAAB', src: Basketball},
       { id: 'MLB', src: Baseball},
       { id: 'Nascar', src: Nascar},
-      { id: 'Gol', src: Football},
-      { id: 'NBA', src: Basketball},
-      { id: 'NCAAF', src: Football},      
+      { id: 'Golf', src: Golf},
+      { id: 'UFC', src: Ufc},
+      { id: 'Boxing', src: Boxing},      
     ];
     // Check if match has started, to disable odds buttons
     let buttonDisabled = 'disabled' 
@@ -73,7 +73,6 @@ export default function MatchView() {
               disabled={buttonDisabled}
               onClick={checkMatchNotStarted(match)
                 ? () => context.createBet(
-                  match.sport_name, 
                   match.league_name, 
                   match.home_team_name, 
                   match.home_team_price, 
