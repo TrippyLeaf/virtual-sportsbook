@@ -9,7 +9,6 @@ export default function Match(props) {
   return(
     <li className='uc-match'>
       <div className='uc_match_left'>
-        <div className='uc_sport'>{props.sport}</div>
         <div className='uc_league'>{props.league}</div>
       </div>
       <div className='uc_desc'>{
