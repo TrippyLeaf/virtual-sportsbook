@@ -19,26 +19,31 @@ export default function MatchView() {
   let { matchId } = useParams();
   const [error, setError] = useState(null);
   const [match, setMatch] = useState({});
-  const [sport_name, setSportName]  = useState(null);
+  const [league_name, setLeagueName]  = useState(null);
   // useEffect substituted for depreciated onComponentWillReceiveProps()
   useEffect(
     () => {
       MatchesApiService.getMatchById(matchId)
       .then(res => {
         setMatch(res)
-        setSportName(res.sport_name)
+        setLeagueName(res.league_name)
         })
       .catch(error => {
         setError({error})
         history.push('/upcoming')
         })
     },[matchId]);
-    // store image urls for header images of each sport
+    // store image urls for header images of each league
     const imageStore = [     
-      { id: 'American Football', src: Football},
-      { id: 'Basketball', src: Basketball},
-      { id: 'Baseball', src: Baseball},
-      
+      { id: 'NFL', src: Football},
+      { id: 'NBA', src: Basketball},
+      { id: 'NCAAF', src: Football},
+      { id: 'NCAAB', src: Basketball},
+      { id: 'MLB', src: Baseball},
+      { id: 'Nascar', src: Nascar},
+      { id: 'Gol', src: Football},
+      { id: 'NBA', src: Basketball},
+      { id: 'NCAAF', src: Football},      
     ];
     // Check if match has started, to disable odds buttons
     let buttonDisabled = 'disabled' 
