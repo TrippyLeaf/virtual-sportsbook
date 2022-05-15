@@ -53,11 +53,11 @@ export default function MatchView() {
     }
     return (
       <>
-      {error === null && match && sport_name?
+      {error === null && match && league_name?
       <div className='match_view'>
         <div 
           className='match_view_header' 
-          style={{ backgroundImage: `url(${imageStore[imageStore.findIndex(x => x.id === sport_name)].src})` }}>
+          style={{ backgroundImage: `url(${imageStore[imageStore.findIndex(x => x.id === leaguet_name)].src})` }}>
           <div className='match_view_header_overlay'>
             <div className='match_header'>{match.league_name}</div>
             <div className='opponents'>{`${match.home_team_name} v ${match.away_team_name}`}</div>
