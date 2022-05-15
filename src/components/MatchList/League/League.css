@@ -8,9 +8,9 @@
 .league_name {
   text-align: center;
   padding: 2px 0 2px 12px;
-  color: white;
-  border: 1px rgb(66, 64, 64) solid;
-  background-color: #57e17d;
+  color: rgb(0, 0, 0);
+  border: 1px rgb(143, 143, 143) solid;
+  background-color: #ffffff;
   cursor: pointer;
   width: 100%;
 }

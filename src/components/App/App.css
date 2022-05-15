@@ -14,8 +14,8 @@ main {
 .logo_box {
   display: flex;
   max-height: 80px;
-  color: #000000;
-  background: #57e17d;
+  color: #57e17d;
+  background: #ffffff;
   font-weight: bold;
 }
 
