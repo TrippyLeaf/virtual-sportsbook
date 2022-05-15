@@ -60,7 +60,7 @@ export default function MatchList({history}) {
         {!error
           ? <>
               <div className='upcoming_link'><Link to={`/upcoming`}>Starting Soon</Link></div>
-              <div className='match_list' ref={dropdownMenu}>{sports}</div>
+              <div className='match_list' ref={dropdownMenu}>{leagues}</div>
             </>
           : <p>{error}</p>
         }
