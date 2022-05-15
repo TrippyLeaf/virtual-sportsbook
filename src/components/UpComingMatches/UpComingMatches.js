@@ -23,7 +23,6 @@ export default function UpComingMatches() {
           match_id={match.matchId} 
           home_team={match.home_team} 
           away_team={match.away_team} 
-          sport={match.sport}
           league={match.league}
           start_time={match.start_time}
         />)                                  
