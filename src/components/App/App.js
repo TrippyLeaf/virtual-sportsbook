@@ -24,7 +24,7 @@ class App extends React.Component {
     bets: [],
     loggedIn: false,
     betslipDisplay: true, 
-    LeagueListDisplay: false,
+    sportListDisplay: false,
     selectedMatchId: '', 
     upcomingMatches: [],
     error: null
@@ -41,18 +41,18 @@ class App extends React.Component {
   // Refresh Button 
   // In case a users bet was settled and they are waiting for funds to be credited
   refreshBalance = () => {
-    const{ email, user_id } = TokenService.readJwtToken();
+    const{ user_name, user_id } = TokenService.readJwtToken();
     return BalanceApiService.getUserBalance(user_id)
       .then(balance => {
         this.setState({
           balance: balance.user_balance,
-          user: email,
+          user: user_name,
           loggedIn: true,
           user_id: user_id,
         })
       })
   };
-  // When user makes deposit
+  // When user selects to have their balance reloaded after it hits $0
   reloadBalance = () => {
     const{ user_id } = TokenService.readJwtToken();
     return BalanceApiService.reloadUserBalance(user_id)
@@ -66,7 +66,7 @@ class App extends React.Component {
     )};
 
   // Bets loaded into bet slip
-  createBet = (league, team, price, matchId, match_desc, teamId) => {
+  createBet = (sport, league, team, price, matchId, match_desc, teamId) => {
     const newBets = [...this.state.bets];
     newBets.push({
       betId: uuidv4(),
@@ -164,9 +164,9 @@ class App extends React.Component {
     }
   }
   // Set users user_name and balance (login)
-  handleSetUser = (email, balance) => {
+  handleSetUser = (user, balance) => {
     this.setState({
-      user: email,
+      user: user,
       balance: balance,
       loggedIn: true
     });
@@ -191,7 +191,7 @@ class App extends React.Component {
       bets: this.state.bets,
       upcomingMatches: this.state.upcomingMatches, 
       betHistory: this.state.betHistory,
-      email: this.state.user,
+      user_name: this.state.user,
       user_id: this.state.user_id,
     }
 
@@ -202,7 +202,7 @@ class App extends React.Component {
             <div className='header_letter_box'>M</div>
             <div className='header_word_box irtual'>ake</div>
             <div className='header_letter_box'>B</div>
-            <div className='header_word_box ports'>etz</div>
+            <div className='header_word_box ports'>ets</div>
           </div>
         </header>
         <div className='App'>
