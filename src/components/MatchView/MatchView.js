@@ -7,12 +7,10 @@ import SportsbookContext from '../../context/SportsbookContext';
 import MatchesApiService from '../../services/matches-api-service';
 import Baseball from '../../assets/images/baseball.JPG';
 import Basketball from '../../assets/images/basketball.JPG';
-import Cricket from '../../assets/images/cricket.JPG';
+import Nascar from '../../assets/images/nascar.JPG';
 import Football from '../../assets/images/football.JPG';
-import IceHockey from '../../assets/images/ice-hockey.JPG';
-import Rugby from '../../assets/images/rugby.JPG';
-import Soccer from '../../assets/images/soccer.JPG';
-import Tennis from '../../assets/images/tennis.JPG';
+import Ufc from '../../assets/images/ufc.JPG';
+import Boxing from '../../assets/images/boxing.JPG';
 import './MatchView.css';
 
 export default function MatchView() {
@@ -88,7 +86,6 @@ export default function MatchView() {
               disabled={buttonDisabled}
               onClick={checkMatchNotStarted(match)
                 ? () => context.createBet(
-                  match.sport_name, 
                   match.league_name, 
                   match.away_team_name, 
                   match.away_team_price, 

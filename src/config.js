@@ -1,4 +1,4 @@
 export default {
-  API_ENDPOINT: 'https://heavenly-rectangular-camera.glitch.me/',
-  TOKEN_KEY: 'VS-Auth-Token'
+  API_ENDPOINT: process.env.API_URL,
+  TOKEN_KEY: 'process.env.TOKEN_KEY'
 };

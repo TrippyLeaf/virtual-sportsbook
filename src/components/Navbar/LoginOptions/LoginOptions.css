@@ -32,7 +32,7 @@
 }
 
 .login_option:hover {
-  color: black;
+  color: rgb(82, 82, 82);
 }
 .required {
   color: #57d17e;
