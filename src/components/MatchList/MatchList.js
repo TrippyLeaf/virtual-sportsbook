@@ -40,22 +40,22 @@ export default function MatchList({history}) {
     return JSON.stringify(obj) === '{}';
   }
 
-    let sports;
+    let leagues;
 
     if (!isEmpty(matches)) {
-      sports = Object.keys(matches)
-        .map(sport => 
-          <Sport 
+      leagues = Object.keys(matches)
+        .map(league => 
+          <league 
             closeMenu={closeMenu}
-            key={sport}
-            sport={sport} 
-            leagues={matches[sport].leagues}
+            key={league}
+            league={league} 
+            leagues={matches[match].leagues}
           />)
-      } else sports = 'No upcoming matches to display, check back later for updated match list'
+      } else leagues = 'No upcoming matches to display, check back later for updated match list'
      
     return(
       <>
-        <button className='matchlist_burger menu_item' onClick={(event) => showMenu(event)}>Sports</button>
+        <button className='matchlist_burger menu_item' onClick={(event) => showMenu(event)}>Leagues</button>
         <section className={`match_list_sidebar ${mobile_active? 'mobile_active': ''}`}>
         {!error
           ? <>
