@@ -42,7 +42,7 @@ export default function MatchView() {
       { id: 'Golf', src: Golf},
       { id: 'UFC', src: Ufc},
       { id: 'Boxing', src: Boxing},
-      { id: 'Racing', src: Racing},
+      { id: 'Racing', src: Racing}
     ];
     // Check if match has started, to disable odds buttons
     let buttonDisabled = 'disabled' 
