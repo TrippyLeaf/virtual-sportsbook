@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import League from './League/League';
+import Sport from './Sport/Sport';
 import { Link } from 'react-router-dom';
 import './MatchList.css';
 import MatchesApiService from '../../services/matches-api-service';
@@ -40,27 +40,27 @@ export default function MatchList({history}) {
     return JSON.stringify(obj) === '{}';
   }
 
-    let leagues;
+    let sports;
 
     if (!isEmpty(matches)) {
-      leagues = Object.keys(matches)
-        .map(league => 
-          <league 
+      sports = Object.keys(matches)
+        .map(sport => 
+          <Sport 
             closeMenu={closeMenu}
-            key={leagues}
-            league={league_id} 
-            leagues={matches[match_id].leagues}
+            key={sport}
+            sport={sport} 
+            leagues={matches[sport].leagues}
           />)
-      } else leagues = 'No upcoming matches to display, check back later for updated match list'
+      } else sports = 'No upcoming matches to display, check back later for updated match list'
      
     return(
       <>
-        <button className='matchlist_burger menu_item' onClick={(event) => showMenu(event)}>Leagues</button>
+        <button className='matchlist_burger menu_item' onClick={(event) => showMenu(event)}>Sports</button>
         <section className={`match_list_sidebar ${mobile_active? 'mobile_active': ''}`}>
         {!error
           ? <>
               <div className='upcoming_link'><Link to={`/upcoming`}>Starting Soon</Link></div>
-              <div className='match_list' ref={dropdownMenu}>{leagues}</div>
+              <div className='match_list' ref={dropdownMenu}>{sports}</div>
             </>
           : <p>{error}</p>
         }
