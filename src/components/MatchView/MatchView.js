@@ -40,7 +40,7 @@ export default function MatchView() {
       { id: 'Basketball', src: Basketball},
       { id: 'Baseball', src: Baseball},
       { id: 'Golf', src: Golf},
-      { id: 'UFC', src: Ufc},
+      { id: 'UFC', src: UFC},
       { id: 'Boxing', src: Boxing},
       { id: 'Racing', src: Racing}
     ];
