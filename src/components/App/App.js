@@ -24,7 +24,7 @@ class App extends React.Component {
     bets: [],
     loggedIn: false,
     betslipDisplay: true, 
-    sportListDisplay: false,
+    LeagueListDisplay: false,
     selectedMatchId: '', 
     upcomingMatches: [],
     error: null
@@ -66,7 +66,7 @@ class App extends React.Component {
     )};
 
   // Bets loaded into bet slip
-  createBet = (sport, league, team, price, matchId, match_desc, teamId) => {
+  createBet = (league, team, price, matchId, match_desc, teamId) => {
     const newBets = [...this.state.bets];
     newBets.push({
       betId: uuidv4(),
@@ -164,9 +164,9 @@ class App extends React.Component {
     }
   }
   // Set users user_name and balance (login)
-  handleSetUser = (user, balance) => {
+  handleSetUser = (email, balance) => {
     this.setState({
-      user: user,
+      user: email,
       balance: balance,
       loggedIn: true
     });
