@@ -370,3 +370,32 @@ button.primary,
   animation: spin 1s linear infinite;
   filter: invert(1);
 }
+
+.css-button {
+	font-family: Arial;
+	color: #080808;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px #22ff73 solid;
+	background-color: #37e65a;
+	text-shadow: 1px 1px 1px #ffffff;
+	box-shadow: inset 1px 1px 2px 0px #fff6af;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+}
+.css-button:hover {
+	background-color: #25de60;
+}
+.css-button-icon {
+	padding: 10px 10px;
+	border-right: 1px solid rgba(255, 255, 255, 0.16);
+	box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
+}
+.css-button-icon svg {
+	vertical-align: middle;
+	position: relative;
+}
+.css-button-text {
+	padding: 10px 18px;
+}
