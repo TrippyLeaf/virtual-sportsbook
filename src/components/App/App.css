@@ -11,6 +11,11 @@ main {
   overflow-y: auto;
 }
 
+background-color: #ffffff;
+background-image: url('https://gateway.pinata.cloud/ipfs/QmS2pJ2pRqBjfiC2VXQfmabUYkrygUHqrAtdg6zkFxNnwA');
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
 .logo_box {
   display: flex;
   max-height: 40px;
