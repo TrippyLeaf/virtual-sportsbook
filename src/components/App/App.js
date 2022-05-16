@@ -202,7 +202,7 @@ class App extends React.Component {
             <div className='header_letter_box'>M</div>
             <div className='header_word_box irtual'>ake</div>
             <div className='header_letter_box'>B</div>
-            <div className='header_word_box ports'>ets</div>
+            <div className='header_word_box ports'>etz</div>
           </div>
         </header>
         <div className='App'>
