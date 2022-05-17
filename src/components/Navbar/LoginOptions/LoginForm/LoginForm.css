@@ -1,21 +1,29 @@
-.login_form {
-  padding: 5px;
-  position: absolute;
-  top: 90px;
-  left: calc(50% - 75px);;
-  border-radius: 6px;
-  border: 2px rgb(0, 0, 0) solid;
-  color: black;
+html {
+	height: 100%;
+}
+  
+  .login_form {
+  padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #fff;
+	font-size: 16px;
 }
 
-.red {
+  .red {
   color: white;
   padding: 0px 5px;
   max-width: 280px;
 }
 
 .password, .email {
-  width: 250px;
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px 30px;
   text-align: left;
 }
 
@@ -24,10 +32,13 @@ label {
   width: 80px;
   text-align: left;
   font-size: 12px;
-}​
+}
 
-#LoginForm__email {
-  width: 150px;
+#email_login {
+  width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
 }
 
 @media only screen and (min-width: 550px) {
@@ -45,7 +56,15 @@ label {
   }
 
   .login_button {
-    margin-top: 20px;
+  width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
   }
   
 }
