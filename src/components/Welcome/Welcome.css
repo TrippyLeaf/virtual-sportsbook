@@ -7,6 +7,13 @@ form {
   display: flex;
   max-width: 1200px;
   flex-direction: column;
+  text-align: center;
+
+}
+
+#welcometext {
+  text-shadow: -1px 0px 14px rgba(0,0,0,0.79), -1px 0px 3px rgba(0,0,0,0.61);
+  color: #57E17D;
 }
 .login_container {
   display: flex;
