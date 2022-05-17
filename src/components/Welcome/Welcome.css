@@ -28,11 +28,11 @@ form {
 }
 
 .login_options > .user_login_control {
-  width: 130px;
-  height: 60px;
+  width: 350px;
+  height: 80px;
   background-color: black;
   color: white;
-  margin: 2px;
+  margin: 15px;
 }
 
 
