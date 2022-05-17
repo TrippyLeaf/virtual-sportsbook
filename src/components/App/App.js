@@ -200,9 +200,9 @@ class App extends React.Component {
         <header role='banner'>
           <div className='logo_box'>
             <div className='header_letter_box'>M</div>
-            <div className='header_word_box irtual'>ake</div>
+            <div className='header_word_box'>ake</div>
             <div className='header_letter_box'>B</div>
-            <div className='header_word_box ports'>etz</div>
+            <div className='header_word_box'>etz</div>
           </div>
         </header>
         <div className='App'>
