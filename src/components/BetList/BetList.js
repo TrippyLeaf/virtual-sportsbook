@@ -9,9 +9,9 @@ export default function BetList(props) {
 
   useEffect(() => {
     if (TokenService.hasAuthToken()) {
-    const { user_id } = TokenService.readJwtToken();
+    const { user_name } = TokenService.readJwtToken();
     
-    BetsApiService.getUserBets(user_id)
+    BetsApiService.getUserBets(user_name)
     .then(bets => setBets(bets))
     .catch(err => setError(err))
     } else setError('Invalid User')

@@ -31,7 +31,7 @@ export default class RegistrationForm extends Component {
   handleSubmit = ev => {
     ev.preventDefault()
     TokenService.clearAuthToken();
-    const { email, password } = ev.target
+    const { email, user_name, password } = ev.target
     const newUser = { email: email.value, password: password.value }
 
     this.setState({ error: null })
@@ -47,8 +47,8 @@ export default class RegistrationForm extends Component {
           password: newUser.password
         })
         .then(result => {
-          const { user_id } = TokenService.readJwtToken()
-          this.props.onRegistrationSuccess(user_id, result.user_balance);
+          const { user_name } = TokenService.readJwtToken()
+          this.props.onRegistrationSuccess(user_name, result.user_balance);
         })
       })
       .catch(err => {
@@ -78,6 +78,18 @@ export default class RegistrationForm extends Component {
             type='email'
             required
             id='RegistrationForm__email'>
+          </input>
+        </div>
+        
+        <div className='field'>
+          <label htmlFor='RegistrationForm__user_name'>
+           username          
+          </label>
+          <input 
+            name='user_name'
+            type='text'
+            required
+            id='RegistrationForm__user_name='>
           </input>
         </div>
         
