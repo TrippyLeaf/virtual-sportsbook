@@ -2,11 +2,11 @@
   display:none;
   background-color: rgb(231, 229, 229);
   min-width: 190px;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .match_list_sidebar {
-  text-align: left;
+  text-align: center;
   overflow-x: hidden;
   max-height: calc(100vh - 125px);
 }
@@ -17,7 +17,7 @@
 }
 
 .match_list_sidebar.mobile_active {
-  width: 75%;
+  width: 80%;
   border: 5px black solid;
 }
 
@@ -53,7 +53,7 @@
     position: static;
     color: darkslategray;
     display: inline-block;
-    width: 35%;
+    width: 50%;
     max-width: 300px;
     position: static;
     height: calc(100vh - 130px);
