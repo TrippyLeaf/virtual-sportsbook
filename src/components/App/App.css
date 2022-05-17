@@ -5,7 +5,7 @@ main {
 .console {
   display: flex;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   overflow-y: auto;
 }
@@ -13,7 +13,7 @@ main {
 .logo_box {
   display: flex;
   max-height: 70px;
-  color: rgb(35, 111, 161);
+  color: #57e17d;
   font-weight: bold;
 }
 
