@@ -23,7 +23,7 @@ export default function LoginOptions(props) {
       </div>
       <div className='form_container'>
         {formOption === 'Login'? <LoginForm onLoginSuccess={props.handleSetUser}/>: null}
-        {formOption === 'Register'? <RegistrationForm onRegistrationSuccess={props.handleSetUser}/>: null}
+        {formOption === 'Register'? <RegistrationFrom onRegistrationSuccess={props.handleSetUser}/>: null}
       </div>
     </>
   );
