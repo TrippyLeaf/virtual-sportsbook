@@ -12,24 +12,23 @@ main {
 }
 
 background-color: #ffffff;
-background-image: url('https://gateway.pinata.cloud/ipfs/QmS2pJ2pRqBjfiC2VXQfmabUYkrygUHqrAtdg6zkFxNnwA');
 background-position: center;
 background-size: contain;
 background-repeat: no-repeat;
 .logo_box {
   display: flex;
-  max-height: 40px;
+  max-height: 80px;
   color: rgb(93, 228, 129);
   font-weight: bold;
 }
 
 .header_letter_box {
-  font-size: 30px;
+  font-size: 50px;
   line-height: normal;
 }
 
 .header_word_box {
-  font-size: 20px;
+  font-size: 50px;
   text-transform: uppercase;
   min-height: 40px;
 }
