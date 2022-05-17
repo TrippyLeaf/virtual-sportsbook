@@ -32,7 +32,7 @@ export default class RegistrationForm extends Component {
     ev.preventDefault()
     TokenService.clearAuthToken();
     const { email, user_name, password } = ev.target
-    const newUser = { email: email.value, password: password.value }
+    const newUser = { email: email.value, user_name: user_name.value, password: password.value }
 
     this.setState({ error: null })
 
@@ -43,7 +43,8 @@ export default class RegistrationForm extends Component {
       AuthApiService.postUser(newUser)
       .then(res => {
         return AuthApiService.postLogin({
-          email: newUser.email, 
+          email: newUser.email,
+          user_name: newUser.user_name, 
           password: newUser.password
         })
         .then(result => {
