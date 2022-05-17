@@ -1,31 +1,36 @@
- .login_button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #4CAF50;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
+.login_button {
+  height: 35px;
   font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
+  border-radius: 16px;
+  padding: 8px 12px;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
+  float: right;
+  background-color: black;
 }
+
+.login_option {
+  height: 50px;
+  font-size: 16px;
+  padding: 8px 12px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
 .login_options {
   display: flex;
 }
 
-.separator {
-  font-size: 20px;
-  line-height: 1.5;
-}
-
 .login_option:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(184, 178, 178);
 }
 .required {
-  color: #ff4e4e;
+  color: #57e17d;
   font-family: Arial;
   font-weight: bold;
 }
