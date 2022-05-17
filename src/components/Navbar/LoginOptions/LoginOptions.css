@@ -1,27 +1,17 @@
-.login_button {
-  height: 35px;
-  font-size: 14px;
-  border-radius: 16px;
-  padding: 8px 12px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  float: right;
-  background-color: rgb(1, 1, 1);
-}
-
-.login_option {
-  height: 35px;
-  font-size: 14px;
-  padding: 8px 12px;
-  color: white;
-  font-weight: bold;
+ .login_button {
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
   cursor: pointer;
-  background: none;
-  border: none;
 }
-
 .login_options {
   display: flex;
 }
