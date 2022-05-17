@@ -48,7 +48,7 @@ export default class RegistrationForm extends Component {
         })
         .then(result => {
           const { user_id } = TokenService.readJwtToken()
-          this.props.onRegistrationSuccess(user_name, result.user_balance);
+          this.props.onRegistrationSuccess(result.user_name, result.user_balance);
         })
       })
       .catch(err => {
@@ -103,7 +103,7 @@ export default class RegistrationForm extends Component {
           </input>
         </div>
         <button id='register' type='submit' className='login_button'>
-          Register
+          Join Now
         </button>
       </form>
     )
