@@ -1,9 +1,9 @@
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: right;
-  background-color: rgb(0, 0, 0);
-  padding: 8px 0;
+  justify-content: center;
+  background-color: rgb(35, 111, 161);
+  padding: 5px 0;
 }
 
 .menu_item_user {
@@ -12,12 +12,12 @@ nav {
 }
 
 .user_info {
-  color: rgb(255, 255, 255);
+  color: white;
   margin: auto; 
 }
 
 .user_info > a {
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: bold;
 }
 
@@ -25,13 +25,13 @@ nav {
   text-transform: uppercase;
   background: none;
   border: none;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .menu_item.user_controls {
   display: flex;
   flex-direction: row;
-  color: #57e17d;
+  color: white;
 }
 
 .stacked_group {
@@ -41,33 +41,28 @@ nav {
   margin: 0px 10px;
 }
 
-.history_link, .logout_button, .deposit_button {
-  background-color: #57e17d;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
+.history_link, .logout_button, .reload_button {
+  font-size: 12px;
   text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
+  background-color: rgb(66, 64, 64);
+  color: white;
+  text-transform: uppercase;
+  padding: 4px;
+  border: none;
+  cursor: pointer; 
+  margin: 2px 0; 
 }
-
 
 .stacked_group > .login_option{
   padding: 0px;
 }
 
-.deposit_button {
-  background-color: #4CAF50; 
+.refresh_button {
+  background: none;
   border: none;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  cursor: pointer;
 }
-
 
 @media only screen and (min-width: 550px) {
 
@@ -76,11 +71,11 @@ nav {
   }
 
   .betslip_count {
-    font-size: 40px;
+    font-size: 16px;
   }
 
   .menu_item {
-    font-size: 20px;
+    font-size: 16px;
   }
 
 }
