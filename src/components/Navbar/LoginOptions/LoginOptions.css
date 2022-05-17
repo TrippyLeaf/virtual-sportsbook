@@ -26,6 +26,11 @@
   display: flex;
 }
 
+.separator {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
 .login_option:hover {
   color: rgb(184, 178, 178);
 }

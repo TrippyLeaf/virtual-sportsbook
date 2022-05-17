@@ -1,6 +1,6 @@
 form {
   padding-top: 25px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .welcome {
@@ -10,7 +10,7 @@ form {
 }
 .login_container {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 .instructions {
@@ -30,7 +30,7 @@ form {
 .login_options > .user_login_control {
   width: 350px;
   height: 80px;
-  background-color: black;
+  background-color: #57e17d;
   color: white;
   margin: 15px;
 }
@@ -39,11 +39,11 @@ form {
 @media only screen and (min-width: 500px) {
 
   .instructions {
-    padding: 10px;
+    padding: 1px;
   }
 
   .instructions > p {
-    margin: 12px;
+    margin: 1px;
   }
 
   h1 {
