@@ -1,7 +1,7 @@
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: right;
   background-color: rgb(97, 240, 157);
   padding: 5px 0;
 }

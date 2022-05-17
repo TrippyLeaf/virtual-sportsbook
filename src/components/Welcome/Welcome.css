@@ -11,10 +11,6 @@ form {
 
 }
 
-#welcometext {
-  text-shadow: -1px 0px 14px rgba(0,0,0,0.79), -1px 0px 3px rgba(0,0,0,0.61);
-  color: #57E17D;
-}
 .login_container {
   display: flex;
   justify-content: center;
@@ -22,7 +18,7 @@ form {
 
 .instructions {
   padding: 2px;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .instructions > p {
@@ -54,11 +50,14 @@ form {
   }
 
   h1 {
-    font-size: 26px;
+    font-size: 30px;
+    text-shadow: -1px 0px 14px rgba(0,0,0,0.79), -1px 0px 3px rgba(0,0,0,0.61);
+    color: #57E17D;
+  
     }
   
     body {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.5;
     }
   

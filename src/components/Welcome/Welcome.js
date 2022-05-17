@@ -5,7 +5,7 @@ export default function Welcome() {
   return (
     <section className='welcome'>
       <div className='instructions'>
-      <div id="welcometext">Join MakeBetz Now</div>        
+      <h1>Join MakeBetz Now</h1>        
        
        <header>Deposit Bonus - MakeBetz wil match your first deposit up to $300*</header>
         <p>
