@@ -19,7 +19,7 @@ export default function LoginOptions(props) {
     <>
       <div className='login_options'>
         <button className='login_option' onClick={() => setFrom('Login')}>Login</button> 
-        <button className='login_option' type='button' onClick={() => setFrom('Register')}>Register</button>
+        <button className='login_option' type='button' onClick={() => setFrom('Register')}>Join Now</button>
       </div>
       <div className='form_container'>
         {formOption === 'Login'? <LoginForm onLoginSuccess={props.handleSetUser}/>: null}

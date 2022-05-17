@@ -24,7 +24,7 @@ nav {
 .menu_item {
   text-transform: uppercase;
   background: black;
-  border: none;
+  border: 1px;
   color: white;
 }
 
