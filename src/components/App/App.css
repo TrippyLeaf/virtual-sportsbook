@@ -7,30 +7,25 @@ main {
   margin: 0 auto;
   justify-content: space-between;
   width: 100%;
-  max-height: calc(100vh - 130px);
   overflow-y: auto;
 }
 
-background-color: #ffffff;
-background-position: center;
-background-size: contain;
-background-repeat: no-repeat;
 .logo_box {
   display: flex;
-  max-height: 80px;
-  color: rgb(93, 228, 129);
+  max-height: 70px;
+  color: rgb(35, 111, 161);
   font-weight: bold;
 }
 
 .header_letter_box {
-  font-size: 50px;
+  font-size: 30px;
   line-height: normal;
 }
 
 .header_word_box {
-  font-size: 50px;
+  font-size: 25px;
   text-transform: uppercase;
-  min-height: 40px;
+  min-height: 50px;
 }
 
 .header_word_box.ports {
@@ -40,12 +35,12 @@ background-repeat: no-repeat;
 @media only screen and (min-width: 550px) {
 
   .betslip_count {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
   }
 
   .console {
-    width: 75%;
+    width: 100%;
   }
 
   .logo_box {
