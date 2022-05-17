@@ -163,11 +163,11 @@ class App extends React.Component {
         })
     }
   }
-  // Set users user_id and balance (login)
-  handleSetUser = (email, user_balance) => {
+  // Set users user_name and balance (login)
+  handleSetUser = (user_name, user_balance) => {
     this.setState({
-      email: email,
-      balance: balance,
+      user_name: user_name,
+      balance: user_balance,
       loggedIn: true
     });
   };
