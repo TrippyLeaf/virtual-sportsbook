@@ -8,7 +8,7 @@ input[type=text], input[type=password] {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: black;
-  background-color: #aeadad;
+  background-color: white;
 }
 
 /* Add a background color when the inputs get focus */
