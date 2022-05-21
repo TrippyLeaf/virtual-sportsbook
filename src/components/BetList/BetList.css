@@ -8,7 +8,7 @@
 }
 
 .bet_line {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 th {
@@ -17,7 +17,7 @@ th {
   background-color: rgb(66, 64, 64);
   color: white;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .bl_desc, .bl_team, .bl_stake,.bl_return, .bl_status {
