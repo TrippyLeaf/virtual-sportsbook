@@ -5,10 +5,11 @@
 }
 
 .match > a {
-  color: #545151;
+  color: black;
+  font-weight: bold;
   text-decoration: none;
-  display:inline-block;
-  width:100%;
+  display: inline-block;
+  width: 100%;
 }
 
 .match > a:hover {
