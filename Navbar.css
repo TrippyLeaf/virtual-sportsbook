@@ -1,0 +1,88 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(28, 30, 36);
+  padding: 2px 0;
+}
+
+.menu_item_user {
+  display: flex;
+  flex-direction: row;
+}
+
+.user_info {
+  color: white;
+  margin: auto; 
+}
+
+.user_info > a {
+  color: white;
+  font-weight: bold;
+}
+
+.menu_item {
+  text-transform: uppercase;
+  background:none;
+  border: none;
+  color: white;
+  font-weight: bold;
+
+}
+
+.menu_item.user_controls {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.stacked_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px 10px;
+}
+
+.history_link, .logout_button, .reload_button {
+  font-size: 14px;
+  text-decoration: none;
+  background-color: rgb(66, 64, 64);
+  color: white;
+  text-transform: uppercase;
+  padding: 4px;
+  border: none;
+  cursor: pointer; 
+  margin: 2px 0; 
+}
+
+.stacked_group > .login_option{
+  padding: 0px;
+}
+
+.refresh_button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 550px) {
+
+  .burger {
+    display: none;
+  }
+
+  .betslip_count {
+    font-size: 16px;
+  }
+
+  .menu_item {
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (min-width: 650px) {
+
+  
+}

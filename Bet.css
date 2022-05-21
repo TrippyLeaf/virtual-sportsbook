@@ -1,0 +1,76 @@
+.bet {
+  display: flex;
+  border: black 1px solid;
+}
+
+.remove_bet {
+  padding: 10px 15px 10px 15px;
+  font-size: 16px;
+  border: black;
+  background-color: rgb(172, 172, 172);
+}
+
+.remove_bet:hover {
+  background-color: red;
+  color: white;
+}
+
+.bet_team {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bet_league {
+  font-weight: normal;
+}
+
+.bet_desc {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  width: calc(100% - 95px);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.bet_amount {
+  position: relative;
+  top: 8px;
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  text-align: right;
+  border: 2px black solid;
+}
+
+
+.bet_size {
+  font-size: 16px
+}
+
+.bet_price {
+  position: relative;
+  top: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 28px;
+}
+
+.bet_desc, .bet_market, .bet_league {
+  font-size: 16px;
+}
+
+
+@media only screen and (min-width: 550px) {
+
+  .bet_amount {
+    position: relative;
+    font-size: 14px;
+  }
+
+  .bet_desc, .bet_market, .bet_league {
+    font-size: 12px;
+  }
+ 
+}
+

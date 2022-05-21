@@ -1,0 +1,15 @@
+.uc_match_list {
+  list-style-type: none;
+  padding: 5px;
+  
+} 
+
+.uc_matches_view {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.uc_matches_view > header {
+  background-color: #57e17d;
+  color: rgb(0, 0, 0);
+}

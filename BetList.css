@@ -1,0 +1,64 @@
+.history {
+  margin: auto;
+  margin-top: 15px;
+}
+
+.bet_history {
+  width: 100%;
+}
+
+.bet_line {
+  font-size: 12px;
+}
+
+th {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(66, 64, 64);
+  color: white;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.bl_desc, .bl_team, .bl_stake,.bl_return, .bl_status {
+  text-align: center;
+}
+
+.bl_status {
+  text-transform: capitalize;
+}
+
+.history > thead {
+  font-size: 14px;
+  margin: 0 auto
+}
+
+.history {
+  border-collapse: collapse;
+}
+
+.history > .bet_history_list > .bet_line > td{
+  padding: 2px 3px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(182, 179, 175, 0.26);
+}
+
+.bet_history > header {
+  color: white;
+  background-color: rgb(66, 64, 64);
+} 
+
+@media only screen and (min-width: 850px) {
+
+  .bet_line {
+    font-size: 14px;
+  }
+
+  .history > thead {
+    font-size: 18px;
+  }
+  
+}
+

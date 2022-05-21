@@ -1,0 +1,17 @@
+.match {
+  font-size: 14px;
+  padding-top: 5px;
+  padding-right: 6px;
+}
+
+.match > a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.match > a:hover {
+  color: #57e17d;
+}
