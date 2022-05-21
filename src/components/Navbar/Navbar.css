@@ -23,16 +23,14 @@ nav {
 
 .menu_item {
   text-transform: uppercase;
-  background:none;
-  border: none;
+  background: #57e17d;
   color: white;
   font-weight: bold;
 
 }
 
 .menu_item:hover {
-  color: #57e17d;
-  
+  color: black;
 }
 
 .menu_item.user_controls {
@@ -61,7 +59,7 @@ nav {
 }
 
 .stacked_group > .login_option{
-  padding: 0px;
+  padding: 1px;
 }
 
 .refresh_button {
