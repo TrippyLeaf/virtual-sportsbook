@@ -30,6 +30,11 @@ nav {
 
 }
 
+.menu_item:hover {
+  color: #57e17d;
+  
+}
+
 .menu_item.user_controls {
   display: flex;
   flex-direction: column;
