@@ -1,6 +1,5 @@
-{
-  "name": "MakeBetz",
-  "version": "0.1.1",
+  "name": "makebetz-sportsbook",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
