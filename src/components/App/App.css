@@ -5,14 +5,15 @@ main {
 .console {
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
+  max-height: calc(100vh - 130px);
   overflow-y: auto;
 }
 
 .logo_box {
   display: flex;
-  max-height: 70px;
+  max-height: 40px;
   color: #57e17d;
   font-weight: bold;
 }
@@ -23,9 +24,9 @@ main {
 }
 
 .header_word_box {
-  font-size: 25px;
+  font-size: 20px;
   text-transform: uppercase;
-  min-height: 50px;
+  min-height: 40px;
 }
 
 .header_word_box.ports {
@@ -35,12 +36,12 @@ main {
 @media only screen and (min-width: 550px) {
 
   .betslip_count {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
   }
 
   .console {
-    width: 100%;
+    width: 75%;
   }
 
   .logo_box {
@@ -54,7 +55,7 @@ main {
 
   .header_word_box {
     font-size: 30px;
-    min-height: 60px;
+    min-height: 50px;
   }
 
   .header_word_box.ports {
