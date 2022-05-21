@@ -5,12 +5,12 @@
 .uc-match {
   display: flex;
   justify-content: center;
-  padding-top: 14px;
+  padding-top: 8px;
 }
 
 .uc_match_left, .uc_start {
-  background-color: grey;
-  padding: 6px 0 6px 15px;
+  background-color: rgb(26, 30, 36);
+  padding: 6px 0 6px 20px;
 }
 
 .uc_match_left {
@@ -21,29 +21,29 @@
 .uc_sport {
   text-align: center;
   min-width: 110px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;  
 }
 
 .uc_league {
   text-align: center;
-  font-size: 16x;
+  font-size: 14px;
 }
 .uc_desc {
   padding-left: 5px;
   line-height: 2.5;
   text-align: center;
   width: 100%;
-  min-width: 250px;
+  min-width: 200px;
   font-size: 16px;
   overflow: hidden;
   white-space: nowrap;
-  background-color: rgb(71, 71, 71);
+  background-color: rgb(26, 30, 36);
 }
 .uc_start {
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
-  width: 175px;
+  width: 155px;
   padding-left: 5px;
 }
 
