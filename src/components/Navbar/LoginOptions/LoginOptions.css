@@ -13,13 +13,12 @@
 .login_option {
   height: 25px;
   font-size: 14px;
-  padding: 12px 20px;
+  padding: 2px 20px;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-  background: none;
-  border: none;
+  background: #57e17d;
 }
 
 .login_options {
@@ -27,12 +26,12 @@
 }
 
 .separator {
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: 25px;
+  line-height: 1;
 }
 
 .login_option:hover {
-  color: #57e17d;
+  color: black;
 }
 .required {
   color: #ca1551;
