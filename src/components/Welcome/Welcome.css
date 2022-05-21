@@ -1,24 +1,21 @@
 form {
-  padding-top: 25px;
-  background-color: #ffffff;
+  padding-top: 15px;
+  background-color: white;
 }
 
 .welcome {
   display: flex;
   max-width: 1200px;
   flex-direction: column;
-  text-align: center;
-
 }
-
 .login_container {
   display: flex;
-  justify-content: center;
+  justify-content: normal;
 }
 
 .instructions {
   padding: 2px;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .instructions > p {
@@ -31,42 +28,36 @@ form {
 }
 
 .login_options > .user_login_control {
-  width: 350px;
-  height: 80px;
-  background-color: #57e17d;
+  width: 120px;
+  height: 50px;
+  background-color: black;
   color: white;
-  margin: 15px;
+  margin: 5px;
 }
 
-
 @media only screen and (min-width: 500px) {
-
   .instructions {
-    padding: 1px;
+    padding: 2px;
   }
 
   .instructions > p {
-    margin: 1px;
+    margin: 8px;
   }
 
   h1 {
-    font-size: 30px;
-    text-shadow: -1px 0px 14px rgba(0,0,0,0.79), -1px 0px 3px rgba(0,0,0,0.61);
-    color: #57E17D;
-  
-    }
-  
-    body {
-      font-size: 20px;
-      line-height: 1.5;
-    }
-  
-    header {
-      padding: 15px 15px;
-    }
-  
-    .user_info {
-     margin: auto;
-    }
-  
+    font-size: 22px;
   }
+
+  body {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  header {
+    padding: 15px 15px;
+  }
+
+  .user_info {
+    margin: auto;
+  }
+}
