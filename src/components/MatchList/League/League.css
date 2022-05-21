@@ -6,11 +6,10 @@
 }
 
 .league_name {
-  text-align: left;
+  text-align: center;
   padding: 2px 0 2px 12px;
-  color: white;
-  border: 1px rgb(66, 64, 64) solid;
-  background-color: #57e17d;
+  color: #57e17d;
+  background-color: rgb(26, 30, 36);
   cursor: pointer;
   width: 100%;
 }
