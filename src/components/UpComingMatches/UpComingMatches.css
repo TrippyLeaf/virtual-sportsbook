@@ -1,6 +1,6 @@
 .uc_match_list {
   list-style-type: none;
-  padding: 15px;
+  padding: 5px;
   
 } 
 
@@ -10,6 +10,6 @@
 }
 
 .uc_matches_view > header {
-  background-color: black;
-  color: #57e17d;
+  background-color: #57e17d;
+  color: rgb(0, 0, 0);
 }
