@@ -9,7 +9,7 @@ import Baseball from '../../assets/images/baseball.JPG';
 import Basketball from '../../assets/images/basketball.JPG';
 import Golf from '../../assets/images/golf.JPG';
 import Football from '../../assets/images/football.JPG';
-import UFC from '../../assets/images/ufc.JPG';
+import Ufc from '../../assets/images/ufc.JPG';
 import Boxing from '../../assets/images/boxing.JPG';
 import Racing from '../../assets/images/racing.JPG';
 import './MatchView.css';
@@ -40,7 +40,7 @@ export default function MatchView() {
       { id: 'Basketball', src: Basketball},
       { id: 'Baseball', src: Baseball},
       { id: 'Golf', src: Golf},
-      { id: 'UFC', src: UFC},
+      { id: 'Ufc', src: UFC},
       { id: 'Boxing', src: Boxing},
       { id: 'Racing', src: Racing}
     ];
