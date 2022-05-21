@@ -1,14 +1,14 @@
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: right;
-  background-color: rgb(97, 240, 157);
-  padding: 5px 0;
+  justify-content: center;
+  background-color: rgb(28, 30, 36);
+  padding: 2px 0;
 }
 
 .menu_item_user {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .user_info {
@@ -23,14 +23,16 @@ nav {
 
 .menu_item {
   text-transform: uppercase;
-  background: black;
-  border: 1px;
+  background:none;
+  border: none;
   color: white;
+  font-weight: bold;
+
 }
 
 .menu_item.user_controls {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   color: white;
 }
 
@@ -38,11 +40,11 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 0px 10px;
+  margin: 10px 10px;
 }
 
 .history_link, .logout_button, .reload_button {
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
   background-color: rgb(66, 64, 64);
   color: white;
