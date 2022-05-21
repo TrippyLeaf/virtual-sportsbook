@@ -1,19 +1,19 @@
 .login_button {
   height: 35px;
   font-size: 14px;
-  border-radius: 16px;
-  padding: 8px 12px;
-  color: white;
+  border-radius: 18px;
+  padding: 8px 16px;
+  color: black;
   font-weight: bold;
   cursor: pointer;
-  float: right;
-  background-color: black;
+  float: none;
+  background-color: #57e17d;
 }
 
 .login_option {
-  height: 50px;
-  font-size: 16px;
-  padding: 8px 12px;
+  height: 25px;
+  font-size: 14px;
+  padding: 12px 20px;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -32,10 +32,10 @@
 }
 
 .login_option:hover {
-  color: rgb(78, 77, 77);
+  color: #57e17d;
 }
 .required {
-  color: #57e17d;
+  color: #ca1551;
   font-family: Arial;
   font-weight: bold;
 }
