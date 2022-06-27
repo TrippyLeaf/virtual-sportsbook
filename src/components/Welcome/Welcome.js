@@ -7,18 +7,18 @@ export default function Welcome() {
       <div className='instructions'>
       <h1>Join MakeBetz Now</h1>        
        
-       <header>Deposit Bonus - MakeBetz wil match your first deposit up to $300*</header>
+       <h5>Deposit Bonus - MakeBetz wil match your first deposit up to $300*</h5>
         <p>
         Terms & Conditions apply
         </p>
-        <header>Weekly, Monthly, Yearly leaderboards</header>
-        <h5>
+        <h5>Weekly, Monthly, Yearly leaderboards</h5>
+        <p>
            Compete with friends on the leaderboards & win prizes        
-         </h5>
+         </p>
     
-        <header>MakeBetz Ballboards & Racepools</header>
+        <h5>MakeBetz Ballboards & Racepools</h5>
       
-        <h5>Buy a square on one of our MakeBetz Ballboards or grab your spot in a Racepool!</h5>
+        <p>Buy a square on one of our MakeBetz Ballboards or grab your spot in a Racepool!</p>
       </div>
     </section>
   );
